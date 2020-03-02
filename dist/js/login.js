@@ -1,0 +1,1 @@
+"use strict";var flag=$(".autologin"),username=$(".uname").text,userpass=$(".upass").text;console.log(username),console.log(userpass),$.ajax({url:"/login",type:"post",data:{uname:username,upass:userpass},dataType:"json",success:function(s){console.log(s)}});

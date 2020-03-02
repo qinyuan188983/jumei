@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.f12 {
+  font-size: 12px;
+}
+.main {
+  width: 960px;
+  margin: auto;
+}
+.fr {
+  float: right;
+}
+.mainColor {
+  color: rgb(248, 41, 109);
+}
+.top {
+  height: 85px;
+}
+.top-01 {
+  margin-top: 24px;
+}
+.top-01 a {
+  font-size: 12px;
+  margin-left: 24px;
+  color: black;
+}
+.login {
+  height: 360px;
+  margin-top: 24px;
+  background-image: url("https://f4.jmstatic.com/static_passport/dist/v1.0.137928/images/account/login_sign/loginPic.jpg?1");
+  background-repeat: no-repeat;
+}
+.login-right {
+  padding: 23px;
+  height: 400px;
+  width: 360px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.075);
+}
+
+.login-right > .p1 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.login-right > .p1 > span {
+  margin-top: 12px;
+  color: gray;
+}
+.zhuce {
+  margin-top: 12px;
+}
+form {
+  margin-top: 24px;
+  > p {
+    width: 100%;
+    margin-top: 36px;
+    > input {
+      width: 100%;
+      height: 42px;
+    }
+  }
+}
+.autologin {
+  width: 12px;
+  height: 12px;
+}
+form p .btn{
+    width: 100%;
+    height: 42px;
+    font-size: 24px;
+    color: rgb(248, 41, 109)
+}
+form p .btn:hover{
+    color: rgb(248, 41, 109)
+}
