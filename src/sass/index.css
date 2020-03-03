@@ -14,6 +14,14 @@
 .fr {
   float: right;
 }
+img {
+  display: block;
+}
+a {
+  color: gray;
+  font-size: 12px;
+  text-decoration: none;
+}
 .list {
   list-style-type: none;
 }
@@ -23,6 +31,9 @@
 }
 .mainColor {
   color: #ed145b;
+}
+.mainbcColor {
+  background-color: #ed145b;
 }
 .top {
   height: 32px;
@@ -58,6 +69,9 @@
 .more {
   right: -28px;
 }
+.top .mobile {
+  font-size: 12px;
+}
 .heander {
   height: 110px;
 }
@@ -71,6 +85,26 @@
 .heander > .cont > .form {
   width: 700px;
   margin-top: 12px;
+}
+.heander > .cont > .form form {
+  height: 40px;
+}
+.heander > .cont > .form ul {
+  height: 28px;
+  margin-top: 8px;
+}
+.heander > .cont > .form ul > li {
+  height: 20px;
+  padding: 0px 6px;
+  text-align: center;
+  border-right: 1px solid gray;
+}
+.heander > .cont > .form ul > li > a {
+  color: gray;
+  font-size: 12px;
+}
+.heander > .cont > .form ul :last-of-type {
+  border-right: none;
 }
 .heander > .cont > .cart {
   height: 34px;
@@ -90,4 +124,82 @@
   line-height: 38px;
   text-align: center;
   background-color: #ed145b;
+}
+.heander .cont .cart {
+  margin-top: 12px;
+  width: 140px;
+  height: 38px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid gray;
+}
+.heander .cont .cart > a {
+  color: gray;
+  text-decoration: none;
+}
+.heander .cont .cart > a > .icon-che {
+  font-size: 24px;
+}
+.nav {
+  background-color: #151515;
+  height: 38px;
+}
+.nav > .cont {
+  color: white;
+  font-weight: 400;
+  height: 38px;
+}
+.nav > .cont > ul {
+  width: auto;
+  height: 100%;
+}
+.nav > .cont > ul > li {
+  width: 108px;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+}
+.nav > .cont > ul :hover {
+  color: #b4a5a9;
+}
+.nav > .cont > .ul2 > li > span {
+  font-size: 24px;
+}
+.fq {
+  display: none;
+  width: 1200px;
+  height: 312px;
+  top: 38px;
+  left: -325px;
+  border: 1px solid gray;
+  padding: 6px 12px;
+}
+.fq > div {
+  width: 256px;
+  height: 138px;
+  margin-bottom: 18px;
+  border-right: 1px dashed gray;
+}
+.fq > div > dl > dt {
+  font-weight: 400;
+}
+.fq > div > dl > dt > a {
+  font-size: 16px;
+  color: black;
+}
+.fq > div > dl > dd {
+  padding: 0 6px;
+}
+.fq > div > dl > dd a {
+  font-size: 14px;
+}
+.fq > div > dl > dd :first-child {
+  width: 100%;
+}
+.fq > .div-4 {
+  border-right: none;
+}
+.right {
+  height: 660px;
 }

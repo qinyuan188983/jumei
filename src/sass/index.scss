@@ -14,6 +14,14 @@
 .fr {
   float: right;
 }
+img {
+  display: block;
+}
+a {
+  color: gray;
+  font-size: 12px;
+  text-decoration: none;
+}
 .list {
   list-style-type: none;
 }
@@ -23,6 +31,9 @@
 }
 .mainColor {
   color: rgb(237, 20, 91);
+}
+.mainbcColor {
+  background-color: rgb(237, 20, 91);
 }
 .top {
   height: 32px;
@@ -58,7 +69,9 @@
 .more {
   right: -28px;
 }
-
+.top .mobile {
+  font-size: 12px;
+}
 .heander {
   height: 110px;
   > .cont {
@@ -67,9 +80,29 @@
       width: 366px;
       justify-content: space-around;
     }
-    >.form{
+    > .form {
       width: 700px;
       margin-top: 12px;
+      form {
+        height: 40px;
+      }
+      ul {
+        height: 28px;
+        margin-top: 8px;
+        > li {
+          height: 20px;
+          padding: 0px 6px;
+          text-align: center;
+          border-right: 1px solid gray;
+          > a {
+            color: gray;
+            font-size: 12px;
+          }
+        }
+        :last-of-type {
+          border-right: none;
+        }
+      }
     }
     > .cart {
       //   width: 138px;
@@ -86,11 +119,298 @@
   border: 4px solid rgb(237, 20, 91);
   border-right: none;
 }
-.search-btn{
-    height: 46px;
-    width: 90px;
+.search-btn {
+  height: 46px;
+  width: 90px;
+  color: white;
+  line-height: 38px;
+  text-align: center;
+  background-color: rgb(237, 20, 91);
+}
+.heander .cont .cart {
+  margin-top: 12px;
+  width: 140px;
+  height: 38px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 38px;
+  border: 1px solid gray;
+
+  > a {
+    color: gray;
+    text-decoration: none;
+    > .icon-che {
+      font-size: 24px;
+    }
+  }
+}
+.nav {
+  background-color: rgb(21, 21, 21);
+  height: 38px;
+  > .cont {
     color: white;
-    line-height: 38px;
+    font-weight: 400;
+    height: 38px;
+    > ul {
+      width: auto;
+      height: 100%;
+      > li {
+        width: 108px;
+        height: 100%;
+        text-align: center;
+        line-height: 30px;
+      }
+      :hover {
+        color: rgb(180, 165, 169);
+      }
+    }
+    > .ul2 {
+      > li {
+        > span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+.fq {
+  display: none;
+  width: 1200px;
+  height: 312px;
+  top: 38px;
+  left: -325px;
+  border: 1px solid gray;
+  padding: 6px 12px;
+  z-index: 99;
+  background-color: white;
+  > div {
+    padding: 0 24px;
+    width: 288px;
+    height: 138px;
+    margin-bottom: 18px;
+    border-right: 1px dashed gray;
+    > dl {
+      > dt {
+        font-weight: 400;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        > a {
+          font-size: 16px;
+          color: black;
+        }
+      }
+      > dd {
+        // margin-top: 12px;
+        padding: 0 6px;
+        a {
+          color: gray;
+          font-size: 14px;
+        }
+        :first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+  > .div-4 {
+    border-right: none;
+  }
+}
+.right {
+  height: 1660px;
+  width: 42px;
+  background-color: rgb(68, 72, 81);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  box-sizing: border-box;
+  color: white;
+  .kefu {
+    width: 100%;
+    margin-top: 150px;
+    > .kefubox {
+      z-index: 99;
+      display: none;
+      padding: 12px;
+      right: 42px;
+      top: 148px;
+      width: 288px;
+      height: 208px;
+      color: black;
+      border: 1px solid gray;
+      background-color: white;
+      // border-bottom:1px dashed gray ;
+      .girl {
+        margin-top: 28px;
+        width: 288px;
+        text-align: center;
+        border-bottom: 1px dashed gray;
+        margin-bottom: 12px;
+        > img {
+          margin-left: 100px;
+          margin-bottom: 12px;
+        }
+      }
+      > button {
+        width: 100px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+      }
+      .dingdan {
+        margin-left: 36px;
+        margin-right: 12px;
+      }
+      .glyphicon {
+        font-size: 24px;
+      }
+    }
+    > span {
+      padding: 0 6px;
+      display: block;
+      width: 100%;
+      height: 40px;
+      font-size: 30px;
+    }
+  }
+  .cart {
+    color: white;
+    margin-top: 28px;
+    height: 118px;
+    padding-top: 12px;
+    > span {
+      padding: 0 6px;
+      display: block;
+      width: 100%;
+      height: 40px;
+      font-size: 24px;
+      > p {
+        font-size: 14px;
+        margin-left: -6px;
+        text-align: center;
+      }
+    }
+  }
+  .money {
+    width: 100%;
+    margin-top: 28px;
+    > span {
+      padding: 0 6px;
+      display: block;
+      width: 100%;
+      height: 40px;
+      font-size: 30px;
+    }
+    > div {
+      width: 88px;
+      height: 42px;
+      right: 42px;
+      top: 0;
+      display: none;
+      text-align: center;
+      line-height: 42px;
+      background-color: rgb(68, 72, 81);
+    }
+  }
+}
+.xinyuan {
+  width: 100%;
+  margin-top: 28px;
+  > span {
+    padding: 0 6px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+  }
+  > div {
+    width: 88px;
+    height: 42px;
+    right: 42px;
+    top: 0;
+    display: none;
     text-align: center;
-    background-color: rgb(237, 20, 91);
+    line-height: 42px;
+    background-color: rgb(68, 72, 81);
+  }
+}
+.zuji {
+  width: 100%;
+  margin-top: 28px;
+  > span {
+    padding: 0 6px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+  }
+  > div {
+    width: 88px;
+    height: 42px;
+    right: 42px;
+    top: 0;
+    display: none;
+    text-align: center;
+    line-height: 42px;
+    background-color: rgb(68, 72, 81);
+  }
+}
+
+.cart:hover {
+  background-color: rgb(237, 20, 91);
+}
+.kefu:hover {
+  background-color: rgb(237, 20, 91);
+}
+.zuji:hover {
+  background-color: rgb(237, 20, 91);
+}
+.money:hover {
+  background-color: rgb(237, 20, 91);
+}
+.xinyuan:hover {
+  background-color: rgb(237, 20, 91);
+}
+.banner {
+  > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  height: auto;
+  .title {
+    width: 468px;
+    height: 48px;
+    border: 2px solid gray;
+    margin: 0 auto;
+    > p {
+      text-align: center;
+      line-height: 44px;
+      font-size: 24px;
+      font-weight: 500;
+      height: 44px;
+      width: 232px;
+      margin: 0;
+    }
+    .activ {
+      color: white;
+      background-color: rgb(102, 102, 102);
+    }
+  }
+  .fengqiang {
+    > div {
+      width: auto;
+      margin-top: 20px;
+      :nth-child(odd) {
+        margin-right: 20px;
+      }
+    }
+  }
 }

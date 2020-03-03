@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1667657_ywusbotlbpa.css">
+    <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
+    <script src="../lib/swiper/js/swiper.min.js"></script>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
     <script src="../js/index.js"></script>
 </head>
 
@@ -14,14 +19,15 @@
         <div class="main">
             <div class="fl">
                 <span>欢迎来到聚美!</span>
-                <span>请登录</span>
-                <span>快速登录</span>
+                <span><a href="./login.html"> 请登录</a></span>
+                <span><a href="./login.html"> 快速登录</a></span>
             </div>
             <div class="fr">
                 <span>正品保证</span>
                 <span>订单查询</span>
                 <span>收藏的品牌</span>
                 <span class="pr">我的聚美
+                    <span class="iconfont icon-arrow"></span>
                     <div class="myjm pa">
                         <ul class="list">
                             <li>我的订单1</li>
@@ -37,8 +43,9 @@
                         </ul>
                     </div>
                 </span>
-                <span class="mainColor">手机聚美</span>
+                <span class="mainColor mobile iconfont icon-shouji">手机聚美</span>
                 <span class="pr">更多
+                    <span class="iconfont icon-arrow"></span>
                     <div class="myjm more pa">
                         <ul class="list">
                             <li>我的好友1</li>
@@ -53,22 +60,161 @@
             </div>
         </div>
     </div>
+    <div class="right">
+        <div class="kefu">
+            <span class="pr iconfont icon-kefu3"></span>
+            <div class="kefubox pa">
+                <span class="fr glyphicon glyphicon-remove-circle"></span>
+                <div class="girl">
+                    <img src="http://p0.jmstatic.com/assets/avatar_nonesign.jpg" alt="">
+                    <p>你好!&nbsp;&nbsp;请&nbsp;&nbsp;<span class="mainColor">登录</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span
+                            class="mainColor">登录</span></p>
+
+                </div>
+                <button class="dingdan">我的订单</button>
+                <button>我的收藏</button>
+            </div>
+        </div>
+        <a href="../pages/cart.html">
+            <div class="cart">
+                <span class=" iconfont icon-che">
+                    <p><br>购<br> 物<br> 车</p>
+                </span>
+            </div>
+        </a>
+        <div class="money pr">
+            <span class="iconfont icon-qianbao"></span>
+            <div class="moneybox pa">
+                我的财产
+            </div>
+        </div>
+        <div class="xinyuan pr">
+            <span class="iconfont icon-weibiaoti-"></span>
+            <div class="xinyuanbox pa">我的心愿单</div>
+        </div>
+        <div class="zuji pr">
+            <span class="iconfont  icon-zuji"></span>
+            <div class="zujibox pa">我看过的</div>
+        </div>
+    </div>
     <div class="heander">
         <div class="main cont">
             <div class="img">
                 <img src="http://p0.jmstatic.com/templates/jumei/images/logo_new_v1.jpg" alt="">
             </div>
             <div class="form">
-                <form action="search">
+                <form class="search">
                     <input class="fl search-input" type="text">
                     <p class="fl search-btn btn">搜索</p>
                 </form>
+                <ul class="list">
+                    <li class="fl"><a href="#">保湿</a></li>
+                    <li class="fl"><a href="#">面膜</a></li>
+                    <li class="fl"><a href="#">洗面奶</a></li>
+                    <li class="fl"><a href="#">补水</a></li>
+                    <li class="fl"><a href="#">香水</a></li>
+                    <li class="fl"><a href="#">眼霜</a></li>
+                    <li class="fl"><a href="#">口红</a></li>
+                    <li class="fl"><a href="#">护肤套装</a></li>
+                    <li class="fl"><a href="#">BB双</a></li>
+                </ul>
             </div>
-            <div class="cart">
-                <span class="fr">去购物车结算</span>
+            <div class="cart fr">
+                <a href="./cart.html"> <span class="iconfont icon-che mainColor"></span>
+                    去购物车结算</a>
             </div>
         </div>
     </div>
+    <div class="nav">
+        <div class="cont main">
+            <ul class="fl list">
+                <li class="fl mainbcColor">首页</li>
+                <li class="fl">急速免税店</li>
+                <li class="fl">母婴特卖</li>
+                <li class="fl pr" id="mz">美妆商城
+                    <span class="iconfont icon-arrow"></span>
+                    <div class="pa fq">
+                        <div class="mz-1  fl">
+                            <img src="http://p0.jmstatic.com/banner/3481/30573_254_135_003-web.jpg" alt="">
+                        </div>
+                        <div class="mz-2  fl">
+                            <dl>
+                            </dl>
+                        </div>
+                        <div class="mz-2 fl">
+                            <dl>
+                            </dl>
+                        </div>
+                        <div class="mz-2 div-4 fl">
+                            <dl>
+                            </dl>
+                        </div>
+                        <div class="mz-5 fl">
+                            <img src="http://p0.jmstatic.com/banner/3481/30573_254_135_005-web.jpg" alt="">
+                        </div>
+                        <div class="mz-2 fl">
+                            <dl>
+                            </dl>
+                        </div>
+                        <div class="mz-2 fl">
+                            <dl>
+                            </dl>
+                        </div>
+                        <div class="mz-2 div-4 fl">
+                            <dl>
+                            </dl>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="fl">国际轻奢</li>
+                <li class="fl">服装运动</li>
+                <li class="fl">鞋包配饰</li>
+            </ul>
+            <ul class="ul2 fr list">
+                <li class="fl">
+                    <span class="iconfont icon-zhen"></span>
+                </li>
+                <li class="fl">
+                    <span class="iconfont icon-huoche"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="http://p0.jmstatic.com/banner/3477/239384_1920_350_002-web.jpg?1583146840" alt=""></div>
+            <div class="swiper-slide">
+                <img src="http://p0.jmstatic.com/banner/3477/239362_1920_350_002-web.jpg?1583047067" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要滚动条 -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <div class="body container">
+        <div class="title">
+            <p class="today activ fl">今日疯抢</p>
+            <p class="tomorrow fl">明日预告</p>
+        </div>
+        <div class="fengqiang container">
+            <div class="fl">
+                <img src="http://p0.jmstatic.com/jmstore/image/000/005/5493_std/5e5d07f4b6587_535_212.jpg?1583157932" alt="">
+            </div>
+            <div class="fl">
+                <img src="http://p0.jmstatic.com/jmstore/image/000/008/8271_std/5e578bcde0c9d_535_212.jpg?1582795815" alt="">
+            </div>
+            <div class="fl">
+                <img src="http://p0.jmstatic.com/jmstore/image/000/004/4521_std/5e5a289503b1f_535_212.jpg?1582967229" alt="">
+            </div>
+            <div class="fl">
+                <img src="http://p0.jmstatic.com/jmstore/image/000/006/6797_std/5e58d630a737f_535_212.jpg?1582882883" alt="">
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
