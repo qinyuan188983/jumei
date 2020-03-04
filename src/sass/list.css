@@ -2,55 +2,43 @@
   margin: 0;
   padding: 0;
 }
-
 .fl {
   float: left;
 }
-
 .pr {
   position: relative;
 }
-
 .pa {
   position: absolute;
 }
-
 .fr {
   float: right;
 }
-
 img {
   display: block;
 }
-
 a {
   color: gray;
   font-size: 12px;
   text-decoration: none;
 }
-
 a:hover,
 a:focus {
   text-decoration: none;
 }
-
 .list {
   list-style-type: none;
 }
-
 .main {
   width: 1100px;
   margin: 0 auto;
 }
-
 .mainColor {
   color: #ed145b;
 }
-
 .mainbcColor {
   background-color: #ed145b;
 }
-
 .top {
   height: 32px;
   font-size: 12px;
@@ -58,14 +46,12 @@ a:focus {
   line-height: 32px;
   background-color: #f2f2f2;
 }
-
 .top span {
   margin-right: 24px;
 }
 .top span :hover {
   color: #ed145b;
 }
-
 .myjm {
   z-index: 99;
   display: none;
@@ -81,19 +67,15 @@ a:focus {
 .myjm > ul > li:hover {
   color: #ed145b;
 }
-
 .top .myjm ul:hover {
   color: gray;
 }
-
 .more {
   right: -28px;
 }
-
 .top .mobile {
   font-size: 12px;
 }
-
 .heander {
   height: 110px;
 }
@@ -133,14 +115,12 @@ a:focus {
   font-size: 12px;
   color: gray;
 }
-
 .search-input {
   width: 438px;
   height: 38px;
   border: 4px solid #ed145b;
   border-right: none;
 }
-
 .search-btn {
   height: 38px;
   width: 90px;
@@ -149,7 +129,6 @@ a:focus {
   text-align: center;
   background-color: #ed145b;
 }
-
 .heander .cont .cart {
   margin-top: 12px;
   width: 140px;
@@ -166,7 +145,6 @@ a:focus {
 .heander .cont .cart > a > .icon-che {
   font-size: 24px;
 }
-
 .nav {
   background-color: #151515;
   height: 38px;
@@ -192,7 +170,6 @@ a:focus {
 .nav > .cont > .ul2 > li > span {
   font-size: 24px;
 }
-
 .fq {
   display: none;
   width: 1200px;
@@ -233,7 +210,6 @@ a:focus {
 .fq > .div-4 {
   border-right: none;
 }
-
 .right {
   height: 1660px;
   width: 42px;
@@ -331,7 +307,6 @@ a:focus {
   line-height: 42px;
   background-color: #444851;
 }
-
 .xinyuan {
   width: 100%;
   margin-top: 28px;
@@ -353,7 +328,6 @@ a:focus {
   line-height: 42px;
   background-color: #444851;
 }
-
 .zuji {
   width: 100%;
   margin-top: 28px;
@@ -375,27 +349,21 @@ a:focus {
   line-height: 42px;
   background-color: #444851;
 }
-
 .cart:hover {
   background-color: #ed145b;
 }
-
 .kefu:hover {
   background-color: #ed145b;
 }
-
 .zuji:hover {
   background-color: #ed145b;
 }
-
 .money:hover {
   background-color: #ed145b;
 }
-
 .xinyuan:hover {
   background-color: #ed145b;
 }
-
 .body {
   background-color: #f7f7f7;
 }
@@ -442,7 +410,6 @@ a:focus {
   line-height: 32px;
   color: gray;
 }
-
 .kh-list:after {
   content: "";
   clear: both;
@@ -452,7 +419,6 @@ a:focus {
   overflow: hidden;
   visibility: hidden;
 }
-
 .paixu-list {
   background-color: #a5b4ad;
 }
@@ -502,5 +468,3 @@ a:focus {
   color: white;
   background-color: #ed145b;
 }
-
-/*# sourceMappingURL=list.css.map */
