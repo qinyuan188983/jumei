@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../css/list.css">
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1667657_ywusbotlbpa.css">
+    <link rel="stylesheet" href="../lib/pagination/pagination.css">
     <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/pagination/pagination.js"></script>
     <script src="../js/list.js"></script>
 </head>
 
@@ -213,14 +215,17 @@
                 <ul class="nav nav-tabs">
                     <li role="presentation" class="active"><a href="#">排序:</a></li>
                     <li role="presentation"><a href="#">默认</a></li>
-                    <li role="presentation"><a href="#">价格</a></li>
-                    <li role="presentation"><a href="#">销量</a></li>
+                    <li id="price" role="presentation "><a href="#">价格</a></li>
+                    <li id="sale" role="presentation sale"><a href="#">销量</a></li>
                     <li role="presentation"><a href="#">人气</a></li>
                     <li role="presentation"><a href="#">上架时间</a></li>
                 </ul>
             </div>
+            <div class="nextpages  m-style">
+            </div>
             <div class="kouhong main">
             </div>
+
         </div>
 </body>
 

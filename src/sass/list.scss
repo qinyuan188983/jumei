@@ -446,16 +446,19 @@ a:focus {
   }
   .kouhong {
     background-color: white;
-    // >.bigger{
-    //   position: relative;
-    //   transform: scale(1.1);
-    //   border: 1px solid gray;
-    //   text-decoration: none;
-    //   // background-color: red;
-    //   z-index: 99;
-    // }
-    >.kouhong-icon {
-      margin-right: 12px;
+
+    > .bigger {
+      // position: relative;
+      transform: scale(1.1);
+      border: 1px solid gray;
+      text-decoration: none;
+      background-color: red;
+      z-index: 99;
+    }
+    > .kouhong-icon {
+      border: 1px solid black;
+      margin-bottom: 24px;
+      margin-right: 18px;
       padding: 12px 24px;
       display: block;
       background-color: white;
@@ -481,8 +484,9 @@ a:focus {
         color: rgb(237, 20, 91);
       }
       .golook {
+        // display: block;
         text-align: center;
-        line-height: 30px;
+        line-height: 18px;
         height: 30px;
         font-size: 14px;
         width: 88px;
@@ -490,5 +494,22 @@ a:focus {
         background-color: rgb(237, 20, 91);
       }
     }
+    
+  }
+  .kouhong::after {
+    content: "";
+    clear: both;
+    width: 0px;
+    height: 0px;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .nextpages{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
   }
 }
