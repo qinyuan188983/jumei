@@ -1,0 +1,1 @@
+"use strict";var obj=[{name:1,age:2},{name:1,age:2},{name:1,age:2}],arr=[1,2,3,4,5];arr.forEach(function(a){obj.forEach(function(a){})});

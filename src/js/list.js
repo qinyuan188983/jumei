@@ -22,7 +22,25 @@ $.ajax({
 })
 
 let cont = 1;
+let list = [];
 $(function () {
+
+    //当点击加入购物车之后,把数据传递到cookie里面
+
+    $('.kouhong').on("click", ".kouhong-icon", function () {
+        // console.log(this);
+        const id = $(this).attr('id');
+        
+        // 2. 去到 list 这个数组里面找到一个 id 对应的数据
+        //   这个数据就是渲染这个 li 的数据
+        // console.log(data);
+
+        localStorage.setItem('goodsID', JSON.stringify( id))
+
+        // 4. 跳转页面
+        window.location.href = './detail.html';
+    })
+
     $('#mz').on({
         mouseover: function () {
             $('#mz .fq').stop().slideDown();
@@ -109,13 +127,15 @@ $(function () {
             // console.log(num);
 
             // str = "";
-            str += `<div class="kouhong-icon fl">
+            str += `
+            <div  id="${item.kh_id}" class="kouhong-icon fl">
                 <span class="haiwai ">[海外自营]</span>
                 <img src="${item.kh_img}" alt="">
                 <span class="xiangqing">${item.kh_name}</span>
                 <span class="price ">¥${item.kh_price}</span>
-                <a href="../pages/detail.html" class="golook btn">去看看</a>
-                 </div>`;
+                <a href="#" id="golook" class="golook btn">去看看</a>
+            </div>`;
+            //  ../pages/detail.html
             $('.kouhong').html(str);
         })
 
@@ -139,6 +159,18 @@ $(function () {
 
         }
     });
+
+
+
+    //加入购物车之后,吧内容放进cookie
+    $(".zuji").on({
+        mouseover: function () {
+            $('.zujibox').stop().slideDown();
+        },
+        mouseout: function () {
+            $('.zujibox').stop().slideUp();
+        }
+    })
 })
 
 function getShop() {
@@ -160,13 +192,14 @@ function getShop() {
                 // console.log(num);
 
                 // str = "";
-                str += `<div class="kouhong-icon fl">
+                str += `<div  id="${item.kh_id}"  class="kouhong-icon fl">
             <span class="haiwai ">[海外自营]</span>
             <img src="${item.kh_img}" alt="">
             <span class="xiangqing">${item.kh_name}</span>
             <span class="price ">¥${item.kh_price}</span>
-            <a href="../pages/detail.html" class="golook btn">去看看</a>
+            <a href="#" id="golook" class="golook btn">去看看</a>
              </div>`;
+                //  ../pages/detail.html
                 $('.kouhong').html(str);
             })
         }
@@ -189,17 +222,17 @@ $.ajax({
 
         let str = '';
         kouhongArr.forEach(item => {
-            // console.log(num);
 
-            // str = "";
-            str += `<div class="kouhong-icon fl">
+            str += `<div  id="${item.kh_id}" class="kouhong-icon fl">
         <span class="haiwai ">[海外自营]</span>
         <img src="${item.kh_img}" alt="">
         <span class="xiangqing">${item.kh_name}</span>
         <span class="price ">¥${item.kh_price}</span>
-        <a href="../pages/detail.html" class="golook btn">去看看</a>
+        <a href="#" class="golook btn">去看看</a>
          </div>`;
+            //  ../pages/detail.html
             $('.kouhong').html(str);
+
         })
     }
 })
@@ -219,7 +252,7 @@ $.ajax({
 
         res.forEach(item => {
             // str = "";
-            str += `<div class="kh-list main ">
+            str += `<div id="${item.kh_id}"  class="kh-list main ">
             <div class="list-title fl">
             ${item.list_title}</div>
             <div class="list-name fl">`;
